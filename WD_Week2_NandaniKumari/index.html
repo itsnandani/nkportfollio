@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandani Kumari | Portfolio</title>
+    <meta name="description" content="Professional dark portfolio for Nandani Kumari, an aspiring software developer.">
+    <link rel="icon" href="nk-monogram.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ====================================================
+         HEADER & NAVIGATION  (Task 3: Flexbox used here)
+         ==================================================== -->
+    <header class="site-header" id="top">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="#home" class="brand-mark" aria-label="Nandani Kumari home">
+                <img class="brand-nk" src="nk-monogram.svg" alt="" aria-hidden="true">
+                <span class="brand-copy">
+                    <span class="brand-name">Nandani Kumari</span>
+                    <span class="brand-subtitle">Aspiring Software Developer</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu"
+                aria-label="Toggle navigation menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a class="nav-home is-active" href="#home" aria-current="page">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="nav-connect" href="#contact">Let&apos;s Connect <span aria-hidden="true">→</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ====================================================
+             HERO SECTION
+             ==================================================== -->
+        <section class="hero" id="home" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <p class="hero-label">ASPIRING SOFTWARE DEVELOPER</p>
+                <h1 class="hero-title" id="hero-heading">
+                    <span class="typing-reserve" aria-hidden="true">I&apos;m an Aspiring Software Developer</span>
+                    <span class="typing-text" id="typingText" aria-hidden="true">Hi, I&apos;m Nandani Kumari</span>
+                    <span class="visually-hidden">Hi, I&apos;m Nandani Kumari</span>
+                </h1>
+                <p class="hero-headline">Building useful, database-driven web applications with clean code and
+                    responsive design.</p>
+                <p class="hero-intro">
+                    I'm an aspiring software developer with hands-on experience designing and developing
+                    web applications using React.js, Node.js, JavaScript, Python, and MySQL.
+                    I enjoy working with REST API integration, responsive user interfaces, and
+                    database-driven solutions through academic and personal projects.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Explore My Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/itsnandani" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <span class="link-separator" aria-hidden="true">·</span>
+                    <a href="https://linkedin.com/in/nandanikumari1" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+
+            <!-- Decorative technology constellation around a code-window illustration -->
+            <div class="hero-visual" aria-hidden="true">
+                <div class="tech-constellation tech-constellation-top">
+                    <div class="tech-float tech-react">
+                        <svg viewBox="0 0 32 32" focusable="false">
+                            <circle cx="16" cy="16" r="2.3" fill="currentColor"></circle>
+                            <ellipse cx="16" cy="16" rx="13" ry="5" fill="none" stroke="currentColor"
+                                stroke-width="1.5"></ellipse>
+                            <ellipse cx="16" cy="16" rx="13" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"
+                                transform="rotate(60 16 16)"></ellipse>
+                            <ellipse cx="16" cy="16" rx="13" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"
+                                transform="rotate(120 16 16)"></ellipse>
+                        </svg>
+                        <span>React.js</span>
+                    </div>
+                    <div class="tech-float tech-node"><span class="tech-mark">node</span><span>Node.js</span></div>
+                    <div class="tech-float tech-javascript"><span class="tech-mark">JS</span><span>JavaScript</span>
+                    </div>
+                    <div class="tech-float tech-python"><span class="tech-mark">Py</span><span>Python</span></div>
+                    <div class="tech-float tech-html">
+                        <svg viewBox="0 0 32 32" focusable="false">
+                            <path fill="currentColor"
+                                d="M5 2h22l-2 24-9 4-9-4L5 2Zm4 6 1 13 6 2.5 6-2.5.5-6H13l-.3-3h10l.3-4H9Z"></path>
+                        </svg>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-float tech-css">
+                        <svg viewBox="0 0 32 32" focusable="false">
+                            <path fill="currentColor"
+                                d="M5 2h22l-2 24-9 4-9-4L5 2Zm4 6 .4 4h13l-.3 4h-9l.3 3 5.5 1.5 3.3-1.4.3-4h4l-.6 7-7 3-7-3-.6-6h4l.2 3 3.3 1 3.2-1 .2-3H9l-.8-11.5H23l-.3 4H9Z">
+                            </path>
+                        </svg>
+                        <span>CSS3</span>
+                    </div>
+                </div>
+                <div class="code-window">
+                    <div class="code-window-bar">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="code-window-icon" aria-hidden="true">&lt;/&gt;</span>
+                        <span class="code-window-title">developer.js</span>
+                    </div>
+                    <pre class="code-window-body"><code><span class="ck-keyword">const</span> developer = {
+  <span class="ck-prop">name</span>: <span class="ck-string">'Nandani Kumari'</span>,
+  <span class="ck-prop">role</span>: <span class="ck-string">'Aspiring Developer'</span>,
+  <span class="ck-prop">stack</span>: [
+    <span class="ck-react">React</span>, <span class="ck-js">JavaScript</span>,
+    <span class="ck-python">Python</span>, <span class="ck-db">MySQL</span>
+  ],
+  <span class="ck-prop">focus</span>: <span class="ck-string">'Web Apps &amp; APIs'</span>,
+  <span class="ck-prop">building</span>: <span class="ck-keyword">true</span>
+};</code></pre>
+                </div>
+                <div class="tech-constellation tech-constellation-bottom">
+                    <div class="tech-float tech-mysql">
+                        <svg viewBox="0 0 32 32" focusable="false">
+                            <ellipse cx="16" cy="7" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1.6">
+                            </ellipse>
+                            <path
+                                d="M6 7v17c0 2.2 4.5 4 10 4s10-1.8 10-4V7M6 15c0 2.2 4.5 4 10 4s10-1.8 10-4M6 23c0 2.2 4.5 4 10 4s10-1.8 10-4"
+                                fill="none" stroke="currentColor" stroke-width="1.6"></path>
+                        </svg>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="tech-float tech-mongodb">
+                        <svg viewBox="0 0 32 32" focusable="false">
+                            <path d="M16 2c-2.5 4.1-8 8.2-8 15a8 8 0 0 0 7 8v4h2v-4a8 8 0 0 0 7-8c0-6.8-5.5-10.9-8-15Z"
+                                fill="currentColor"></path>
+                            <path d="M16 6v20" fill="none" stroke="#101625" stroke-width="1.3"></path>
+                        </svg>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="tech-float tech-express"><span class="tech-mark">ex</span><span>Express.js</span></div>
+                    <div class="tech-float tech-php"><span class="tech-mark">PHP</span><span>PHP</span></div>
+                    <div class="tech-float tech-git">
+                        <svg viewBox="0 0 32 32" focusable="false">
+                            <path d="M9 7v13a5 5 0 0 0 5 5h2M9 13h9a5 5 0 0 1 5 5v7" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round"></path>
+                            <circle cx="9" cy="6" r="3" fill="currentColor"></circle>
+                            <circle cx="9" cy="13" r="3" fill="currentColor"></circle>
+                            <circle cx="23" cy="26" r="3" fill="currentColor"></circle>
+                        </svg>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-float tech-github">
+                        <svg viewBox="0 0 32 32" focusable="false">
+                            <path fill="currentColor"
+                                d="M16 2C8.27 2 2 8.27 2 16c0 6.2 4.02 11.47 9.6 13.33.7.13.96-.3.96-.67v-2.55c-3.9.85-4.73-1.66-4.73-1.66-.64-1.62-1.56-2.05-1.56-2.05-1.28-.87.1-.85.1-.85 1.42.1 2.17 1.46 2.17 1.46 1.26 2.16 3.3 1.54 4.1 1.18.13-.91.5-1.54.9-1.9-3.12-.36-6.4-1.56-6.4-6.95 0-1.54.55-2.8 1.46-3.78-.15-.36-.63-1.8.14-3.74 0 0 1.2-.38 3.85 1.44a13.4 13.4 0 0 1 7 0c2.66-1.82 3.85-1.44 3.85-1.44.77 1.94.29 3.38.14 3.74.91.98 1.46 2.24 1.46 3.78 0 5.4-3.28 6.58-6.42 6.94.5.44.96 1.3.96 2.63v3.9c0 .37.25.81.97.67A14.01 14.01 0 0 0 30 16c0-7.73-6.27-14-14-14Z">
+                            </path>
+                        </svg>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech-float tech-vscode">
+                        <svg viewBox="0 0 32 32" focusable="false">
+                            <path fill="currentColor"
+                                d="m23 2-12 11-6-4-4 3v8l4 3 6-4 12 11 7-3V5l-7-3ZM5 13l4 3-4 3v-6Zm9 3 12-9v18l-12-9Z">
+                            </path>
+                        </svg>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================
+             ABOUT SECTION
+             ==================================================== -->
+        <section class="section neon-section neon-section-about" id="about" aria-labelledby="about-heading">
+            <div class="section-header">
+                <h2 class="section-title" id="about-heading">About Me</h2>
+                <p class="section-subtitle">A quick introduction</p>
+            </div>
+            <div class="about-grid">
+                <article class="about-card about-card-cyan">
+                    <span class="about-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="8" r="3.5" />
+                            <path d="M5 20c.6-3.4 3.1-5.5 7-5.5s6.4 2.1 7 5.5" />
+                        </svg>
+                    </span>
+                    <h3>Who I Am</h3>
+                    <p>
+                        I'm an aspiring software developer based in Darbhanga, Bihar, India.
+                        I'm passionate about creating web applications that solve real problems,
+                        from leave management systems to domain intelligence platforms.
+                    </p>
+                </article>
+                <article class="about-card about-card-violet">
+                    <span class="about-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-12-2 14" />
+                        </svg>
+                    </span>
+                    <h3>What I Do</h3>
+                    <p>
+                        I work with React.js, Node.js, JavaScript, Python, and MySQL to build
+                        database-driven solutions with REST API integration and responsive
+                        user interfaces. I have a foundation in Data Structures and Algorithms.
+                    </p>
+                </article>
+                <article class="about-card about-card-pink">
+                    <span class="about-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="8.5" />
+                            <circle cx="12" cy="12" r="4.5" />
+                            <path d="m15.5 8.5 5-5m-3.5 0h3.5v3.5" />
+                        </svg>
+                    </span>
+                    <h3>What I'm Looking For</h3>
+                    <p>
+                        I'm interested in learning new technologies and contributing to
+                        real-world software development projects. I'm currently pursuing my
+                        B.Tech in Computer Science &amp; Engineering and actively building
+                        projects to grow my skills.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ====================================================
+             TECHNICAL SKILLS
+             ==================================================== -->
+        <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+            <div class="section-header skills-header">
+                <p class="skills-eyebrow"><span aria-hidden="true"></span> MY SKILLS</p>
+                <h2 class="section-title" id="skills-heading">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with to build modern, efficient, and user-friendly web
+                    applications.</p>
+                <span class="skills-heading-accent" aria-hidden="true"></span>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-group skill-programming">
+                    <div class="skill-card-heading">
+                        <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <path d="m8 7-5 5 5 5M16 7l5 5-5 5m-3-12-2 14" />
+                            </svg></span>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <p class="skill-description">Core languages I use to solve problems.</p>
+                    <ul class="skill-list">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </article>
+                <article class="skill-group skill-frontend">
+                    <div class="skill-card-heading">
+                        <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="16" rx="2" />
+                                <path d="M3 9h18M7 6.5h.01M10 6.5h.01" />
+                            </svg></span>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <p class="skill-description">Building responsive and modern user interfaces.</p>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </article>
+                <article class="skill-group skill-backend">
+                    <div class="skill-card-heading">
+                        <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <rect x="4" y="4" width="16" height="6" rx="2" />
+                                <rect x="4" y="14" width="16" height="6" rx="2" />
+                                <path d="M8 7h.01M8 17h.01M12 7h5M12 17h5" />
+                            </svg></span>
+                        <h3>Backend &amp; APIs</h3>
+                    </div>
+                    <p class="skill-description">Building server-side logic and API integrations.</p>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>REST APIs</li>
+                        <li>PHP</li>
+                    </ul>
+                </article>
+                <article class="skill-group skill-databases">
+                    <div class="skill-card-heading">
+                        <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <ellipse cx="12" cy="5" rx="8" ry="3" />
+                                <path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+                            </svg></span>
+                        <h3>Databases</h3>
+                    </div>
+                    <p class="skill-description">Storing and managing application data.</p>
+                    <ul class="skill-list">
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>MySQL Workbench</li>
+                    </ul>
+                </article>
+                <article class="skill-group skill-tools">
+                    <div class="skill-card-heading">
+                        <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M14 7 17 4a4 4 0 0 1 3 3l-3 3M10 17l-3 3a4 4 0 0 1-3-3l3-3m3-2 4 4M7 7l10 10M8 4l12 12" />
+                            </svg></span>
+                        <h3>Tools &amp; Platforms</h3>
+                    </div>
+                    <p class="skill-description">Tools I use for development and deployment.</p>
+                    <ul class="skill-list">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Postman</li>
+                        <li>VS Code</li>
+                        <li>Vite</li>
+                        <li>Vercel</li>
+                        <li>Netlify</li>
+                        <li>XAMPP</li>
+                    </ul>
+                </article>
+                <article class="skill-group skill-operating-systems">
+                    <div class="skill-card-heading">
+                        <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="13" rx="2" />
+                                <path d="M8 21h8m-4-4v4M7 8h10M7 11h6" />
+                            </svg></span>
+                        <h3>Operating Systems</h3>
+                    </div>
+                    <p class="skill-description">Platforms I work on.</p>
+                    <ul class="skill-list">
+                        <li>Windows</li>
+                        <li>Linux</li>
+                    </ul>
+                </article>
+                <article class="skill-group skill-computer-science">
+                    <div class="skill-card-heading">
+                        <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <path d="M9 3H5v4m10-4h4v4M5 17v4h4m10-4v4h-4M8 8h8v8H8zM3 12h5m8 0h5M12 3v5m0 8v5" />
+                            </svg></span>
+                        <h3>Core Computer Science</h3>
+                    </div>
+                    <p class="skill-description">Foundational concepts for problem-solving.</p>
+                    <ul class="skill-list">
+                        <li>Data Structures &amp; Algorithms</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- ====================================================
+             PROJECTS SECTION  (Task 4: CSS Grid gallery)
+             ==================================================== -->
+        <section class="section" id="projects" aria-labelledby="projects-heading">
+            <div class="section-header projects-header">
+                <p class="projects-eyebrow"><span aria-hidden="true">✦</span> FEATURED PROJECTS</p>
+                <h2 class="section-title" id="projects-heading">Featured Projects</h2>
+                <p class="section-subtitle">Things I've built and am building to solve real-world problems.</p>
+                <span class="projects-heading-accent" aria-hidden="true"></span>
+                <span class="projects-code-mark" aria-hidden="true">&lt;/&gt;</span>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1: Leave Management System -->
+                <article class="project-card project-leave">
+                    <div class="project-thumbnail project-thumbnail-leave" aria-hidden="true">
+                        <!-- CSS mockup: employee leave dashboard -->
+                        <div class="dashboard-mockup">
+                            <div class="dm-header">
+                                <span class="dm-title">Leave Dashboard</span>
+                                <span class="dm-badge">Admin</span>
+                            </div>
+                            <span class="dm-demo-note">Illustrative demo data</span>
+                            <div class="dm-stats">
+                                <div class="dm-stat">
+                                    <span class="dm-stat-num">12</span>
+                                    <span class="dm-stat-label">Pending</span>
+                                </div>
+                                <div class="dm-stat">
+                                    <span class="dm-stat-num">8</span>
+                                    <span class="dm-stat-label">Approved</span>
+                                </div>
+                                <div class="dm-stat">
+                                    <span class="dm-stat-num">3</span>
+                                    <span class="dm-stat-label">Rejected</span>
+                                </div>
+                            </div>
+                            <div class="dm-row"><span class="dm-dot dm-dot-pending"></span>John Doe — Casual Leave</div>
+                            <div class="dm-row"><span class="dm-dot dm-dot-approved"></span>Jane Smith — Sick Leave
+                            </div>
+                            <div class="dm-row"><span class="dm-dot dm-dot-pending"></span>Alex Lee — Earned Leave</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <h3>Leave Management System</h3>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <p class="project-desc" id="leave-overview">
+                            A web-based Leave Management System using PHP and MySQL to automate employee leave
+                            applications, approvals, and record management.
+                        </p>
+                        <ul class="project-features">
+                            <li>User authentication for Employee and Administrator modules</li>
+                            <li>Leave approval / rejection workflow</li>
+                            <li>Leave balance tracking</li>
+                            <li>Report generation</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">XAMPP</span>
+                            <span class="tag">MySQL Workbench</span>
+                        </div>
+                        <a class="project-action" href="#leave-overview">Project Overview <span
+                                aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <!-- Project 2: DHIS -->
+                <article class="project-card project-dhis">
+                    <div class="project-thumbnail project-thumbnail-dhis" aria-hidden="true">
+                        <!-- CSS mockup: domain intelligence dashboard -->
+                        <div class="dashboard-mockup">
+                            <div class="dm-header">
+                                <span class="dm-title">Domain Intelligence</span>
+                                <span class="dm-badge dm-badge-live">In Development</span>
+                            </div>
+                            <div class="dm-search-bar">
+                                <span class="dm-search-icon"></span>
+                                <span class="dm-search-text">example.com</span>
+                            </div>
+                            <div class="dm-info-grid">
+                                <div class="dm-info-item">
+                                    <span class="dm-info-label">Registrar</span>
+                                    <span class="dm-info-value">Demo Registrar</span>
+                                </div>
+                                <div class="dm-info-item">
+                                    <span class="dm-info-label">SSL</span>
+                                    <span class="dm-info-value dm-info-valid">Valid</span>
+                                </div>
+                                <div class="dm-info-item">
+                                    <span class="dm-info-label">DNS</span>
+                                    <span class="dm-info-value">A, MX, TXT</span>
+                                </div>
+                                <div class="dm-info-item">
+                                    <span class="dm-info-label">IP Geo</span>
+                                    <span class="dm-info-value">US, VA</span>
+                                </div>
+                            </div>
+                            <p class="dm-demo-note">Illustrative demonstration data — no live lookup</p>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <h3>Domain Hosting Intelligence System (DHIS)</h3>
+                            <div class="project-timeline">
+                                <span class="project-year">August 2025 — Present</span>
+                                <span class="project-status-chip"><span class="status-dot"></span> In Development</span>
+                            </div>
+                        </div>
+                        <p class="project-desc" id="dhis-overview">
+                            A web-based platform using React.js and Node.js to analyze and retrieve domain and hosting
+                            information from public sources.
+                        </p>
+                        <ul class="project-features">
+                            <li>WHOIS lookup</li>
+                            <li>DNS record analysis</li>
+                            <li>SSL certificate inspection</li>
+                            <li>IP geolocation tracking</li>
+                            <li>Data visualization components for domain ownership and hosting info</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">GitHub</span>
+                        </div>
+                        <a class="project-action" href="#dhis-overview">Project Overview <span
+                                aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <!-- Project 3: Smart Attendance -->
+                <article class="project-card project-attendance">
+                    <div class="project-thumbnail project-thumbnail-attendance" aria-hidden="true">
+                        <!-- CSS mockup: attendance dashboard -->
+                        <div class="dashboard-mockup">
+                            <div class="dm-header">
+                                <span class="dm-title">Attendance Dashboard</span>
+                                <span class="dm-badge">Teacher</span>
+                            </div>
+                            <span class="dm-demo-note">Illustrative demo data</span>
+                            <div class="dm-stats">
+                                <div class="dm-stat">
+                                    <span class="dm-stat-num">45</span>
+                                    <span class="dm-stat-label">Present</span>
+                                </div>
+                                <div class="dm-stat">
+                                    <span class="dm-stat-num">3</span>
+                                    <span class="dm-stat-label">Absent</span>
+                                </div>
+                                <div class="dm-stat">
+                                    <span class="dm-stat-num">2</span>
+                                    <span class="dm-stat-label">Late</span>
+                                </div>
+                            </div>
+                            <div class="dm-row"><span class="dm-dot dm-dot-approved"></span>Student 001 — Present</div>
+                            <div class="dm-row"><span class="dm-dot dm-dot-rejected"></span>Student 002 — Absent</div>
+                            <div class="dm-row"><span class="dm-dot dm-dot-late"></span>Student 003 — Late</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <h3>Smart Attendance Management System</h3>
+                            <span class="project-year">September 2025</span>
+                        </div>
+                        <p class="project-desc" id="attendance-overview">
+                            A Smart Attendance Management System using Python and MySQL to automate student attendance
+                            tracking and record management.
+                        </p>
+                        <ul class="project-features">
+                            <li>Student registration module</li>
+                            <li>Attendance marking</li>
+                            <li>Attendance monitoring</li>
+                            <li>Report generation</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a class="project-action" href="#attendance-overview">Project Overview <span
+                                aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ====================================================
+             EDUCATION SECTION
+             ==================================================== -->
+        <section class="section section-alt neon-section neon-section-education" id="education" aria-labelledby="education-heading">
+            <div class="section-header education-header">
+                <p class="education-eyebrow">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c3.7 2.8 8.3 2.8 12 0v-5m4-2v6"/></svg>
+                    EDUCATION
+                </p>
+                <h2 class="section-title" id="education-heading">Education</h2>
+                <p class="section-subtitle">My academic background</p>
+                <span class="education-heading-accent" aria-hidden="true"></span>
+            </div>
+            <div class="timeline education-timeline">
+                <article class="timeline-item education-item education-item-btech">
+                    <div class="education-rail" aria-hidden="true">
+                        <span class="timeline-marker"></span>
+                        <span class="education-year">2027</span>
+                    </div>
+                    <div class="timeline-content education-card">
+                        <div class="education-card-copy">
+                            <span class="education-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c3.7 2.8 8.3 2.8 12 0v-5m4-2v6"/></svg>
+                            </span>
+                            <div class="education-title-group">
+                                <p class="education-level">UNDERGRADUATE</p>
+                                <h3>B.Tech — Computer Science &amp; Engineering</h3>
+                            </div>
+                            <p class="timeline-institution">Budge Budge Institute of Technology (BBIT)</p>
+                            <div class="education-badges">
+                                <span class="education-badge">University <strong>MAKAUT</strong></span>
+                                <span class="education-badge">Expected graduation <strong>2027</strong></span>
+                            </div>
+                        </div>
+                        <svg class="education-illustration education-illustration-cap" viewBox="0 0 180 150" aria-hidden="true">
+                            <path d="m25 53 65-32 65 32-65 33-65-33Z" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <path d="M48 66v31c25 20 59 20 84 0V66M155 53v49" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="155" cy="108" r="5" fill="currentColor"/>
+                            <path d="M45 119h90m-78 12h66" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </article>
+                <article class="timeline-item education-item education-item-higher">
+                    <div class="education-rail" aria-hidden="true">
+                        <span class="timeline-marker"></span>
+                        <span class="education-year">2022</span>
+                    </div>
+                    <div class="timeline-content education-card">
+                        <div class="education-card-copy">
+                            <span class="education-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M3 5.5c3.2-.9 6.2-.4 9 1.5v13c-2.8-1.9-5.8-2.4-9-1.5v-13Zm18 0c-3.2-.9-6.2-.4-9 1.5v13c2.8-1.9 5.8-2.4 9-1.5v-13Z"/><path d="M6 9h3m-3 3h3m6-3h3m-3 3h3"/></svg>
+                            </span>
+                            <div class="education-title-group">
+                                <p class="education-level">HIGHER SECONDARY</p>
+                                <h3>Higher Secondary — Class XII</h3>
+                            </div>
+                            <p class="timeline-institution">M.R.M College</p>
+                            <div class="education-badges">
+                                <span class="education-badge">Board <strong>BSEB</strong></span>
+                                <span class="education-badge">Year <strong>2022</strong></span>
+                            </div>
+                        </div>
+                        <svg class="education-illustration education-illustration-book" viewBox="0 0 180 150" aria-hidden="true">
+                            <path d="M25 39c23-8 44-3 65 11v73c-21-14-42-19-65-11V39Zm130 0c-23-8-44-3-65 11v73c21-14 42-19 65-11V39Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                            <path d="M43 59c11-2 22 0 32 5m-32 12c11-2 22 0 32 5m30-22c10-5 21-7 32-5m-32 24c10-5 21-7 32-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M90 50v75" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </article>
+                <article class="timeline-item education-item education-item-secondary">
+                    <div class="education-rail" aria-hidden="true">
+                        <span class="timeline-marker"></span>
+                        <span class="education-year">2020</span>
+                    </div>
+                    <div class="timeline-content education-card">
+                        <div class="education-card-copy">
+                            <span class="education-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10Z"/><path d="M8 21v-7h8v7M7 10h.01M12 10h.01M17 10h.01"/></svg>
+                            </span>
+                            <div class="education-title-group">
+                                <p class="education-level">SECONDARY</p>
+                                <h3>Secondary — Class X</h3>
+                            </div>
+                            <p class="timeline-institution">S K High School, Kusheshwar Asthan</p>
+                            <div class="education-badges">
+                                <span class="education-badge">Board <strong>BSEB</strong></span>
+                                <span class="education-badge">Year <strong>2020</strong></span>
+                                <span class="education-badge">Result <strong>68%</strong></span>
+                            </div>
+                        </div>
+                        <svg class="education-illustration education-illustration-school" viewBox="0 0 180 150" aria-hidden="true">
+                            <path d="M29 62 90 30l61 32v10H29V62Zm10 10v48m22-48v48m29-48v48m29-48v48m22-48v48M25 120h130m-111 12h92" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M80 30V17h20v23M85 17h10M82 91h16v29H82z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ====================================================
+             CERTIFICATIONS SECTION  (Task 4: CSS Grid)
+             ==================================================== -->
+        <section class="section neon-section neon-section-certifications" id="certifications"
+            aria-labelledby="cert-heading">
+            <div class="section-header">
+                <h2 class="section-title" id="cert-heading">Certifications &amp; Training</h2>
+                <p class="section-subtitle">Courses and programs I've completed</p>
+            </div>
+            <div class="cert-grid">
+                <article class="cert-card cert-card-cyan">
+                    <div class="cert-card-top">
+                        <span class="cert-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <path d="M6 3.5h9l4 4V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z" />
+                                <path d="M14 3.5v5h5M8 13h8m-8 3h5" />
+                                <path d="m9 21 3-2 3 2v-5H9z" />
+                            </svg></span>
+                        <span class="cert-number">01</span>
+                    </div>
+                    <h3>Python Foundation with Data Structures &amp; Algorithms</h3>
+                    <p class="cert-provider">iTronix Solutions</p>
+                    <p class="cert-date"><span>Completed</span>April 2024</p>
+                </article>
+                <article class="cert-card cert-card-violet">
+                    <div class="cert-card-top">
+                        <span class="cert-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <path d="M12 3 20 6v5c0 5-3.4 8.2-8 10-4.6-1.8-8-5-8-10V6l8-3Z" />
+                                <path d="m8.5 12 2.2 2.2 4.8-4.8" />
+                            </svg></span>
+                        <span class="cert-number">02</span>
+                    </div>
+                    <h3>Secure Java &amp; Spring Boot Development</h3>
+                    <p class="cert-provider">Udemy</p>
+                    <p class="cert-date"><span>Completed</span>April 2026</p>
+                </article>
+                <article class="cert-card cert-card-pink">
+                    <div class="cert-card-top">
+                        <span class="cert-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <path d="m12 3 2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7L12 3Z" />
+                                <path d="M7 18v3l5-2 5 2v-3" />
+                            </svg></span>
+                        <span class="cert-number">03</span>
+                    </div>
+                    <h3>IBM SkillsBuild Winter Certification Program: Data Analytics — Turning Data into Decisions Using
+                        Python</h3>
+                    <p class="cert-provider">IBM SkillsBuild &amp; CSRBOX Foundation</p>
+                    <p class="cert-date"><span>Completed</span>December 2024 – January 2025</p>
+                </article>
+                <article class="cert-card cert-card-green">
+                    <div class="cert-card-top">
+                        <span class="cert-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <rect x="5" y="3" width="14" height="18" rx="2" />
+                                <path d="M9 7h6m-6 4h6m-6 4h3" />
+                                <circle cx="16.5" cy="17" r="1" />
+                            </svg></span>
+                        <span class="cert-number">04</span>
+                    </div>
+                    <h3>Android Apps Development – Build 10 Applications</h3>
+                    <p class="cert-provider">Udemy</p>
+                    <p class="cert-date"><span>Completed</span>May 2025</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ====================================================
+             ACTIVITIES SECTION
+             ==================================================== -->
+        <section class="section section-alt neon-section neon-section-activities" id="activities"
+            aria-labelledby="activities-heading">
+            <div class="section-header">
+                <h2 class="section-title" id="activities-heading">Activities</h2>
+                <p class="section-subtitle">Events I've participated in</p>
+            </div>
+            <div class="activities-grid">
+                <article class="activity-card activity-card-cyan">
+                    <div class="activity-card-heading">
+                        <span class="activity-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M9 18h6m-5 3h4m-2-20a7 7 0 0 0-4 12.7c.8.5 1.2 1.2 1.2 2.3h5.6c0-1.1.4-1.8 1.2-2.3A7 7 0 0 0 12 1Z" />
+                                <path d="M12 5v4m-2-2h4" />
+                            </svg></span>
+                        <h3>Innovation Ignite 4.0</h3>
+                    </div>
+                    <p class="activity-organizer">Organized by EDC, IIC &amp; Google Developer Groups on Campus, BBIT
+                    </p>
+                    <p class="activity-date"><span aria-hidden="true">◷</span> August 2025</p>
+                    <p class="activity-desc">Participated in idea development and innovation-focused problem solving.
+                    </p>
+                </article>
+                <article class="activity-card activity-card-violet">
+                    <div class="activity-card-heading">
+                        <span class="activity-icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="13" rx="2" />
+                                <path d="m8 9-2 2 2 2m4-4-2 4m7-4h-2m-3 6 1 4H9l1-4m-5 7h14" />
+                            </svg></span>
+                        <h3>INNOV8 2.0 — Inter-College Hackathon</h3>
+                    </div>
+                    <p class="activity-organizer">BBIT</p>
+                    <p class="activity-date"><span aria-hidden="true">◷</span> September 2025</p>
+                    <p class="activity-desc">Collaborated in a team on technology-based problem solving and
+                        presentation.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ====================================================
+             CONTACT SECTION
+             ==================================================== -->
+        <section class="section section-alt neon-section neon-section-contact" id="contact"
+            aria-labelledby="contact-heading">
+            <div class="section-header">
+                <h2 class="section-title" id="contact-heading">Let&apos;s Work Together</h2>
+                <p class="section-subtitle">Have a project idea or an opportunity to discuss? Feel free to get in touch.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-panel contact-info" aria-label="Contact information">
+                    <a href="mailto:nandanikumari0414@gmail.com" class="contact-item" aria-label="Email Nandani Kumari">
+                        <span class="contact-icon" aria-hidden="true">@</span>
+                        <span class="contact-copy">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">nandani@gmail.com</span>
+                        </span>
+                    </a>
+                    <a href="tel:+9181475XXXXX" class="contact-item" aria-label="Call Nandani Kumari">
+                        <span class="contact-icon" aria-hidden="true">☎</span>
+                        <span class="contact-copy">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">+91 81555555XXX</span>
+                        </span>
+                    </a>
+                    <div class="contact-item contact-item-static">
+                        <span class="contact-icon" aria-hidden="true">⌖</span>
+                        <span class="contact-copy">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">India</span>
+                        </span>
+                    </div>
+                    <a href="https://linkedin.com/in/nandanikumari1" target="_blank" rel="noopener noreferrer"
+                        class="contact-item" aria-label="Nandani Kumari on LinkedIn">
+                        <span class="contact-icon contact-icon-text" aria-hidden="true">in</span>
+                        <span class="contact-copy">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">linkedin.com/in/nandanikumari1</span>
+                        </span>
+                    </a>
+                    <a href="https://github.com/itsnandani" target="_blank" rel="noopener noreferrer"
+                        class="contact-item" aria-label="Nandani Kumari on GitHub">
+                        <span class="contact-icon contact-icon-text" aria-hidden="true">GH</span>
+                        <span class="contact-copy">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">github.com/itsnandani</span>
+                        </span>
+                    </a>
+                </div>
+                <form class="contact-panel contact-form" id="contactForm" aria-describedby="contactFormNote">
+                    <div class="form-field">
+                        <label for="contactName">Full Name</label>
+                        <input id="contactName" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="contactEmail">Email Address</label>
+                        <input id="contactEmail" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="contactSubject">Subject</label>
+                        <input id="contactSubject" name="subject" type="text" autocomplete="off" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                    </div>
+                    <button class="btn btn-primary contact-submit" type="submit">Send Message</button>
+                    <p class="form-note" id="contactFormNote">Submitting opens your default email application with the
+                        details filled in. Please review and send the email there.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====================================================
+         FOOTER
+         ==================================================== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="#home" class="brand-mark footer-brand-mark" aria-label="Nandani Kumari home">
+                    <img class="brand-nk" src="nk-monogram.svg" alt="" aria-hidden="true">
+                </a>
+                <div class="footer-brand-copy">
+                    <h2>Nandani Kumari</h2>
+                    <p>Aspiring Software Developer building useful web applications with modern technologies.</p>
+                </div>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#activities">Activities</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-connect">
+                <h3>Connect with me</h3>
+                <div class="footer-socials" aria-label="Social profiles and email">
+                    <a href="https://github.com/itsnandani" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub profile">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.2-.4-3.8 1.4a13.3 13.3 0 0 0-6.9 0C5.4 1.2 4.2 1.6 4.2 1.6a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.1 6.4 6.1 6.7a3.4 3.4 0 0 0-.9 2.6V22" />
+                        </svg>
+                        <span>GitHub</span><span class="footer-external" aria-hidden="true">↗</span>
+                    </a>
+                    <a href="https://linkedin.com/in/nandanikumari1" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn profile">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M4 9v11M4 4.5v.1M9 20v-6.2c0-2.3 1.3-3.8 3.4-3.8s3.4 1.5 3.4 3.8V20M9 10v10M20 20v-6.3c0-3.6-1.9-5.7-5-5.7-2.1 0-3.5 1.1-4.2 2.4" />
+                        </svg>
+                        <span>LinkedIn</span><span class="footer-external" aria-hidden="true">↗</span>
+                    </a>
+                    <a href="mailto:mailto@gmail.com" aria-label="Email mailto@gmail.com">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <path d="m4 7 8 6 8-6" />
+                        </svg>
+                        <span>Email</span><span class="footer-external" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-divider" aria-hidden="true"></span>
+            <p class="footer-copy">&copy; <span id="currentYear">2026</span> Nandani Kumari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
